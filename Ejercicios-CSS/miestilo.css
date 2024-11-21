@@ -1,0 +1,21 @@
+
+body{
+    text-align: center;
+    font-family: "poppins",cursive;
+    background: linear-gradient(to right, #6b73f6,#19ac67);
+}
+div{
+    border: 2px solid #222231;
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    box-shadow: 10px 12px #4d3c3c;
+}
+#imagen{
+    width: 50px;
+    float: left;
+    border-radius: 50%;
+}
+div h3{
+    text-shadow: 10px 5px #817878;
+}

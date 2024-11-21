@@ -18,26 +18,58 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<form id="formulario_suscripcion">
+    <p>
+       <label for="nombre"> Nombre: <input type="text" name="nombre" placeholder="nombre" id="nombre"> </label>
+    </p>
+    <p>
+        <label for="apellido"> Apellido: <input type="text" name="apellido" placeholder="apellido" id="apellido"> </label>
+    </p>
+    <p>
+        Sexo:  <label for="masculino">Masculino</label> <input type="radio" name="sexo" value="masculino" id="masculino">
+              <label for="femenino">Femenino</label>  <input type="radio" name="sexo" value="femenino" id="femenino">
+    </p>
+    <p>
+        <label for="edad">Edad: <input type="number" name="edad" placeholder="edad" id="edad"> </label>
+    </p>
+    <p>
+        <label for="email">Email: <input type="email" name="email" placeholder="email" id="email"> </label>
+    </p>
+    <p>
+        <label for="usuario">Usuario: <input type="text" name="usuario" placeholder="usuario" id="usuario"></label>
+    <p>
+        <label for="password">Password: <input type="password" name="contraseña" placeholder="password" id="password"> </label>
+    </p>
+    <p>
+        <label for="confirmar">Confirmar Password: <input type="password" name="confirmar_contraseña" placeholder="confirm" id="confirmar"></label>
+    </p>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+    <p>
+    Tipo de servicio:   <label for="free">Free <input type="checkbox" name="tipo_servicio" value="free" id="free"></label>  /
+                    <label for="standard">Standard <input type="checkbox" name="tipo_servicio" value="standard" id="standard"></label> /
+                     <label for="premium">Premium <input type="checkbox" name="tipo_servicio" value="premium" id="premium"></label>
+    </p>
 
-Agregue un comentario:
+    <p>
 
-Boton de Enviar
+      <label for="tema">  Tema: </label>
+        <select id="tema">
+            <option value="politica"> Política </option>
+            <option value="negocios"> Negocios </option>
+            <option value="tecnologia"> Tecnología </option>
+            <option value="salud"> Salud </option>
+        </select>
+    </p>
 
+    <p>
+   <label for="comentario"> Agregue un comentario: </label><textarea id="comentario"> </textarea>
+    </p>
+
+    <p>
+   <button type="button"> Boton de Enviar </button>
+    </p>
+
+</form>
 
 </body>
 </html>
